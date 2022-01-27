@@ -1,0 +1,12 @@
+{
+  "name": "projeto-altoritimos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:evilhalba/projeto-altoritimos.git",
+  "author": "Eduardo Vilhalba <vilhalba.20000@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typeorm": "^0.2.41",
+    "typescript": "^4.5.5"
+  }
+}

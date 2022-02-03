@@ -1,12 +1,12 @@
 {
-  "name": "travelling-salesman-algorithm",
+  "name": "travelling-enem",
   "version": "0.0.1",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Guilherme Sehn <ghsehn@gmail.com>",
+  "author": "Eduardo Vilhalba",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21",

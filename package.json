@@ -1,12 +1,15 @@
 {
-  "name": "projeto-altoritimos",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:evilhalba/projeto-altoritimos.git",
-  "author": "Eduardo Vilhalba <vilhalba.20000@gmail.com>",
+  "name": "travelling-salesman-algorithm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Sehn <ghsehn@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "typeorm": "^0.2.41",
-    "typescript": "^4.5.5"
+    "lodash": "^4.17.21",
+    "yargs": "^17.3.1"
   }
 }

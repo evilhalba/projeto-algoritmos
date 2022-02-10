@@ -4,7 +4,7 @@ const _ = require('lodash')
 
 function getDistances(distances, node, path) {
   return distances[node]
-    .map((distance, node) => _.includes(path, node) ? Infinity : distance) // remove visited nodes
+    .map((distance, node) => _.includes(path, node) ? Infinity : distance) 
 }
 
 function getCloserNode(distances) {

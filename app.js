@@ -61,6 +61,12 @@ function run() {
 
   console.log('Path: ' + result.path.join(' - '))
   console.log('Distance: ' + result.distance)
+  const data = "Path: "+result.path.join(' - ') + " \n Distance: " + result.distance
+  fs.writeFile('result.txt', data, (err) => {
+    if (err) throw err;
+  console.log('O arquivo com o resultado foi criado!');
+});
+
 }
 
 run()

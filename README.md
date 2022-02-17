@@ -1,11 +1,6 @@
-Requisitos
+## Projeto de Algoritimos(BASE)
 
 
-Para rodar o programa, é preciso ter o node.js versão 4 ou superior instalado no computador.
+###	:building_construction:	:building_construction: UNDER CONSTRUCTION
 
-Como executar
-
-
-Instalar as dependências executando npm install na pasta do projeto (necessário apenas antes de executar o app pela primeira vez)
-
-
+![Construction Scene](https://raw.githubusercontent.com/ugurcandede/Under-Construction/master/construction-scene/Capture.PNG)

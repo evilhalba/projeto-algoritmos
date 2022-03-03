@@ -17,7 +17,7 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
 
     sys.exit(1)
 
-setup(name='TSP-GA'
+setup(name='TSP-Visinho'
     , version=0.1
     , python_requires='>={}'.format(REQUIRED_PYTHON)
     , author='eduardovilhalba'

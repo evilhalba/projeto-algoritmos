@@ -31,6 +31,7 @@ class Gene:  # City
 
         return dist
 
+
 class Individual:  # Route: possible solution to TSP
     def __init__(self, genes):
         assert(len(genes) > 3)
@@ -109,14 +110,14 @@ def evolve(pop, tourn_size, mut_rate):
         new_generation.add(fittest)
         pop.rmv(fittest)
 
-    # TO-DO Crossover
+    # Crossover
     for _ in range(elitism_num, pop_size):
         parent_1 = selection(new_generation, tourn_size)
         parent_2 = selection(new_generation, tourn_size)
         child = crossover(parent_1, parent_2)
         new_generation.add(child)
 
-    # TO-DO Mutation
+    # Mutation
     for i in range(elitism_num, pop_size):
         mutate(new_generation.individuals[i], mut_rate)
 
@@ -124,7 +125,6 @@ def evolve(pop, tourn_size, mut_rate):
 
 
 def crossover(parent_1, parent_2):
-    #TO-DO
     def fill_with_parent1_genes(child, parent, genes_n):
         start_at = randint(0, len(parent.genes)-genes_n-1)
         finish_at = start_at + genes_n
@@ -144,6 +144,7 @@ def crossover(parent_1, parent_2):
     child = Individual([None for _ in range(genes_n)])
     fill_with_parent1_genes(child, parent_1, genes_n // 2)
     fill_with_parent2_genes(child, parent_2)
+
     return child
 
 
@@ -164,7 +165,7 @@ def run_ga(genes, pop_size, n_gen, tourn_size, mut_rate, verbose=1):
     counter, generations, min_cost = 0, 0, maxsize
 
     if verbose:
-        print("-- TSP-Vizinho -- Iniciando Geração ...")
+        print("-- TSP-Visinho -- Iniciando Processamento...")
 
     start_time = time()
     while counter < n_gen:
@@ -182,8 +183,8 @@ def run_ga(genes, pop_size, n_gen, tourn_size, mut_rate, verbose=1):
     total_time = round(time() - start_time, 6)
 
     if verbose:
-        print("-- TSP-Vizinho -- A geração foi finalizada em {} gerações em {} s".format(generations, total_time))
-        print("-- TSP-Vizinho -- Custo minimo de viagem {} KM".format(min_cost))
+        print("-- TSP-Visinho -- Processamento finalizado apos {} gerações em {} s".format(generations, total_time))
+        print("-- TSP-Visinho -- Custo minimo de viagem {} KM".format(min_cost))
 
     history['generations'] = generations
     history['total_time'] = total_time

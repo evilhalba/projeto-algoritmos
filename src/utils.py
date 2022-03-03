@@ -29,9 +29,9 @@ def plot(costs, individual, save_to=None):
 
 def plot_ga_convergence(costs):
     x = range(len(costs))
-    plt.title("Gráfico")
-    plt.xlabel('Geração')
-    plt.ylabel('Custo por (KM)')
+    plt.title("GA Cobertura")
+    plt.xlabel('geração')
+    plt.ylabel('custo (KM)')
     plt.text(x[len(x) // 2], costs[0], 'custo minimo: {} KM'.format(costs[-1]), ha='center', va='center')
     plt.plot(x, costs, '-')
 

@@ -6,21 +6,21 @@ from datetime import datetime
 
 
 def run(args):
-    genes = utils.get_genes_from(args.cities_fn)
+    genes = utils.get_genes_from(args.places_fn)
 
     if args.verbose:
-        print("-- Rodando TSP-Visinho com {} lugares --".format(len(genes)))
+        print("-- Rodando TSP-Visinho com {} locais --".format(len(genes)))
 
     history = ga.run_ga(genes, args.pop_size, args.n_gen,
                         args.tourn_size, args.mut_rate, args.verbose)
 
     if args.verbose:
-        print("-- Desenhando a Rota --")
+        print("-- desenhando rota --")
 
     utils.plot(history['cost'], history['route'])
 
     if args.verbose:
-        print("-- Gerado --")
+        print("-- Pronto! --")
 
 
 if __name__ == "__main__":
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     parser.add_argument('--tourn_size', type=int, default=50, help='Tournament size')
     parser.add_argument('--mut_rate', type=float, default=0.02, help='Mutation rate')
     parser.add_argument('--n_gen', type=int, default=20, help='Number of equal generations before stopping')
-    parser.add_argument('--locales_fn', type=str, default="data/locales.csv", help='Data containing the geographical coordinates of cities')
+    parser.add_argument('--places_fn', type=str, default="data/places.csv", help='Data containing the geographical coordinates of places')
 
     random.seed(datetime.now())
     args = parser.parse_args()

@@ -4,7 +4,7 @@
 ###	:building_construction:	:building_construction: UNDER CONSTRUCTION
 
 <h2>:compass: Contexto</h2>
-<p>A ideia destre projeto é desenvolver em python uma solução para o TSP-Visilho, mais conhecido como problema do caixeiro viajante.</p>
+<p>A ideia destre projeto é desenvolver em python uma solução para o TSP-Visinho, mais conhecido como problema do caixeiro viajante.</p>
 
 <h2>:books: Bibliotecas Utilizadas</h2>
 <p>As bibiliotecas utilizadas foram:</p>
@@ -17,7 +17,8 @@
 
 <h2>:rocket: Como rodar</h2>
 1. Clone the repository and navigate to the downloaded folder.
-    ```bash
+   
+   ```bash
     git clone https://github.com/evilhalba/projeto-algoritmos.git
     cd projeto-algoritimos-main
     ```
